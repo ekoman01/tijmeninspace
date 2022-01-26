@@ -65,8 +65,17 @@ body {
   }
 }
 
-@media all and (orientation:landscape) {
+@media only screen and (orientation:landscape) and (max-height: 450px) {
   body {
     background-image: url("../assets/phone-landscape.png");
+  }
+
+  .title {
+    width: 50%;
+  }
+  
+  .knop {
+    height: auto;
+    width: 50%;
   }
 }
