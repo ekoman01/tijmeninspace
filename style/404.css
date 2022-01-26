@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "digital";
+  src: url("../assets/fonts/DS-DIGIB.TTF");
+}
+
+body {
+  background-image: url("../assets/404-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+p {
+  font-family: digital;
+  color: yellow;
+  font-size: 4em;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 80% 1fr 10%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.div1 {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-self: center;
+}
