@@ -73,9 +73,13 @@ body {
   .title {
     width: 50%;
   }
-  
+
   .knop {
     height: auto;
     width: 50%;
+  }
+
+  .parent {
+    grid-template-rows: 1fr 10% 15% 5%;
   }
 }
