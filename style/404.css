@@ -14,13 +14,12 @@ body {
 p {
   font-family: digital;
   color: yellow;
-  font-size: 4em;
 }
 
 .parent {
   display: grid;
   grid-template-columns: 20% 1fr 20%;
-  grid-template-rows: 80% 1fr 10%;
+  grid-template-rows: 70% 12% 1fr 10%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 100vw;
@@ -30,4 +29,18 @@ p {
 .div1 {
   grid-area: 2 / 2 / 3 / 3;
   justify-self: center;
+}
+
+.div2 {
+  grid-area: 3 / 2 / 4 / 3;
+  justify-self: center; 
+  align-self: start;
+}
+
+.div1 > p {
+  font-size: 4em;
+}
+
+.div2 > p {
+  font-size: 2em;
 }
