@@ -33,7 +33,7 @@ p {
 
 .div2 {
   grid-area: 3 / 2 / 4 / 3;
-  justify-self: center; 
+  justify-self: center;
   align-self: start;
 }
 
@@ -43,4 +43,60 @@ p {
 
 .div2 > p {
   font-size: 2em;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    background-image: url("../assets/404-mobile.png");
+  }
+
+  .parent {
+    grid-template-rows: 70% 15% 1fr 10%;
+  }
+
+  .div1 > p {
+    font-size: 1.8em;
+  }
+  
+  .div2 > p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1150px) {
+  body {
+    background-image: url("../assets/404-tablet.png");
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .parent {
+    grid-template-rows: 70% 15% 1fr 10%;
+  }
+
+  .div1 > p {
+    font-size: 2.8em;
+  }
+  
+  .div2 > p {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 450px) {
+  body {
+    background-image: url("../assets/404-landscape.png");
+  }
+
+  .parent {
+    grid-template-rows: 70% 15% 1fr 10%;
+  }
+
+  .div1 > p {
+    font-size: 1.5em;
+  }
+  
+  .div2 > p {
+    font-size: 1em;
+  }
 }
