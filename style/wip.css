@@ -64,3 +64,9 @@ body {
       background-image: url("../assets/background-tablet.png");
   }
 }
+
+@media all and (orientation:landscape) {
+  body {
+    background-image: url("../assets/phone-landscape.png");
+  }
+}
