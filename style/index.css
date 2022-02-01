@@ -1,0 +1,17 @@
+body {
+  background-image: url("../assets/home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.work {
+    width: 100vw;
+    height: 200vh;
+  }
