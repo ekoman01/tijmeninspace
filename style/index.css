@@ -1,13 +1,13 @@
 body {
   margin-left: 5em;
   margin-right: 5em;
-  margin-top: 1em;
+  margin-top: 2em;
   font-family: century-gothic, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.parent {
+.fold {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 3em 1fr 3em;
@@ -39,7 +39,7 @@ body {
 }
 
 .nav__links li {
-  padding-left: 1em;
+  padding-left: 5em;
 }
 
 .nav__links li a {
@@ -57,12 +57,6 @@ body {
   padding-bottom: 1em;
   padding-left: 1em;
   font-size: 5em;
-}
-
-@media only screen and (min-width: 850px) and (max-width: 1550px) {
-  .text {
-    font-size: 4em;
-  }
 }
 
 .image {
@@ -84,4 +78,43 @@ body {
 
 .space {
   display: inline;
+}
+
+.cards {
+  margin-top: 15em;
+  margin-bottom: 10em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titleCards{
+  font-size: 4em;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 30%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+img {
+  border-radius: 10px 10px 0 0;
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1550px) {
+  .text {
+    font-size: 4em;
+  }
 }
